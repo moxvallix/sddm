@@ -229,7 +229,7 @@ namespace SDDM {
 
         if (exitCode == HELPER_SUCCESS) {
             qDebug() << "Auth: sddm-helper exited successfully";
-            emit qobject_cast<Auth*>(parent())->finished(static_cast<Auth::HelperExitStatus>(exitCode));
+            Q_EMIT qobject_cast<Auth*>(parent())->finished(static_cast<Auth::HelperExitStatus>(exitCode));
         }
 
         else
