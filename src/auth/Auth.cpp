@@ -348,6 +348,7 @@ namespace SDDM {
         if(on != d->fingerprintlogin){
             d->fingerprintlogin = on;
         }
+        Q_EMIT fingerprintloginChanged();
     }
 
     void Auth::setGreeter(bool on)
